@@ -23,6 +23,12 @@ export default function Home() {
             >
               Todos
             </Link>
+            <Link
+              href="/posts"
+              className="px-5 py-2 bg-blue-500 border-2 border-blue-500 rounded-md text-white text-lg font-bold hover:bg-white hover:text-blue-500 transition-all duration-300"
+            >
+              Posts
+            </Link>
           </div>
         </div>
       </div>
