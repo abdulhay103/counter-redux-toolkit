@@ -55,6 +55,12 @@ export default function CounterUi() {
             >
               Todos
             </Link>
+            <Link
+              href="/posts"
+              className=" hover:underline hover:text-red-500 transition-all duration-300"
+            >
+              Posts
+            </Link>
           </footer>
         </div>
       </div>
