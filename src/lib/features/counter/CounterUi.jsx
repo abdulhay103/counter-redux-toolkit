@@ -2,6 +2,7 @@
 
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increaseByValue, increment, reset } from "./counterSlice";
+import Link from "next/link";
 
 export default function CounterUi() {
   const count = useSelector((state) => state.counter.count);
@@ -11,7 +12,7 @@ export default function CounterUi() {
     <div className=" container mx-auto">
       <div className=" w-full min-h-screen flex justify-center items-center">
         <div className=" w-2/5 rounded-lg shadow-md py-5 px-10 border">
-          <h1 className=" text-center text-2xl font-bold py-5">Counter</h1>
+          <h1 className=" text-center text-2xl font-bold py-5">Counter RTK</h1>
           <div className="px-5 py-2 bg-emerald-50 rounded-md border shadow-inner ">
             <p className=" text-right">{count}</p>
           </div>
@@ -41,6 +42,20 @@ export default function CounterUi() {
               + 5
             </button>
           </div>
+          <footer className=" flex gap-5 justify-center pt-8">
+            <Link
+              href="/"
+              className=" hover:underline hover:text-red-500 transition-all duration-300"
+            >
+              Home
+            </Link>
+            <Link
+              href="/todos"
+              className=" hover:underline hover:text-red-500 transition-all duration-300"
+            >
+              Todos
+            </Link>
+          </footer>
         </div>
       </div>
     </div>
